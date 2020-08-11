@@ -322,9 +322,10 @@ footer li:nth-child(2) {
 }
 
 footer {
- padding: 1rem 0;
- background: #f7f7f7;
- text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+  background: #f7f7f7;
+  text-align: center;
 }
 
 /*    termina footer     */
