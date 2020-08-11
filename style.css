@@ -18,6 +18,12 @@ body {
  text-rendering: optimizeLegibility;
 }
 
+.formatare_text{
+  text-indent: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .container {
  margin: auto;
  padding: 0 1rem;
