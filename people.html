@@ -29,45 +29,62 @@
 
 	<section class="gallery">
 		<div class="container">
-			<div class="grid">
 
-				<div class="column-xs-12 column-md-4">
+			<div class="filtre">
+
+				<button class="buton_mare collapsible">filter by people</button>
+				<div class="toolbar">
+
+					<button class="buton actiune butonactiv" data-rel="all">all</button>
+					<button class="buton actiune" data-rel="livia">Livia</button>
+					<button class="buton actiune" data-rel="eugen">Eugen</button>
+					<button class="buton actiune" data-rel="ana">Ana</button>
+
+				</div>
+
+			</div>
+			
+
+			<div id="portfolio" class="grid">
+
+				<div class="tile column-xs-12 column-md-4 scale-anm ana all">
 					<figure class="img-container">
 						<img src="https://source.unsplash.com/8b1cWDyvT7Y" />
 					</figure>
 				</div>
 
-				<div class="column-xs-12 column-md-4">
+				<div class="tile column-xs-12 column-md-4 scale-anm eugen all">
 					<figure class="img-container">
 						<img src="https://source.unsplash.com/5VXH4RG88gc" />
 					</figure>
 				</div>
 
-				<div class="column-xs-12 column-md-4">
+				<div class="tile column-xs-12 column-md-4 scale-anm eugen all">
 					<figure class="img-container">
 						<img src="https://source.unsplash.com/XtUd5SiX464">
 					</figure>
 				</div>
 
-				<div class="column-xs-12 column-md-6">
+				<div class="tile column-xs-12 column-md-6 scale-anm ana all">
 					<figure class="img-container">
 						<img src="https://source.unsplash.com/JYGnB9gTCls" />
 					</figure>
 				</div>
 
-				<div class="column-xs-12 column-md-6">
+				<div class="tile column-xs-12 column-md-6 scale-anm livia all">
 					<figure class="img-container">
 						<img src="https://source.unsplash.com/-RBuQ2PK_L8" />
 					</figure>
 				</div>
 				
-				<div class="column-xs-12">
+				<div class="tile column-xs-12 scale-anm livia all">
 					<figure class="img-container">
 						<img src="https://source.unsplash.com/P44RIGl9V54" />
 					</figure>
 				</div>
 
 			</div>
+
 		</div>
 	</section>
 
@@ -87,6 +104,9 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src="script.js"></script>
 	
 </body>
 </html>

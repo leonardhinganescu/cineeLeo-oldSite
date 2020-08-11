@@ -185,8 +185,8 @@ a:hover {
  color: #000;
 }
 
-a.active {
- color: #000;
+nav .active {
+ color: #000 !important;
 }
 
 .title {
@@ -222,6 +222,58 @@ nav li:nth-child(2) {
 
 .gallery {
  padding: 0 0 4rem 0;
+}
+
+.tile {
+  transform: scale(0);
+}
+
+.scale-anm {
+  transform: scale(1);
+}
+.filtre {
+  text-align: right;
+}
+
+.toolbar{
+  display: none;
+  overflow: hidden;
+}
+
+.buton_mare {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  font-weight: 300;
+  background-color: #f7f7f7;
+  border: none;
+  cursor: pointer;
+}
+
+.buton_mare:focus {
+  outline: none;
+}
+
+.buton {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  font-weight: 300;
+  background-color: #f7f7f7;
+  border: none;
+  cursor: pointer;
+}
+
+.buton:hover {
+  font-weight: 600;
+}
+
+.butonactiv {
+  font-weight: 600 ;
+}
+
+.buton:focus {
+  outline: none;
 }
 
 figure {
@@ -605,20 +657,20 @@ footer {
 
   .img-container {
    height: 100%;
-  }
+ }
 
  .img-content {
    display: block;
    padding: 1rem 0;
-  }
+ }
 
-  img {
+ img {
    transition: none;
-  }
+ }
 
-  img:hover {
+ img:hover {
    transform: none;
-  }
+ }
 }
 
 /*    termiana media responsive     */
