@@ -271,11 +271,11 @@ nav li:nth-child(2) {
 }
 
 .buton:hover {
-  font-weight: 600;
+  text-shadow: 0 0 .01px black;
 }
 
 .butonactiv {
-  font-weight: 600 ;
+  text-shadow: 0 0 .01px black;
 }
 
 .buton:focus {
