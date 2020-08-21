@@ -32,9 +32,9 @@ body {
 }
 
 .grid {
- display: flex;
- flex-direction: column;
- flex-flow: row wrap;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
 }
 
 .grid > [class*="column-"] {
@@ -226,6 +226,22 @@ nav li:nth-child(2) {
 
 /*    incepe galerie     */
 
+.dimmed {
+  position: relative;
+}
+
+.dimmed:after {
+  content: " ";
+  z-index: 10;
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+}
+
 .gallery {
  padding: 0 0 4rem 0;
 }
@@ -298,10 +314,6 @@ img {
  object-fit: cover;
  transform: scale(1);
  transition: all 0.3s ease-in-out;
-}
-
-img:hover {
- transform: scale(1.02);
 }
 
 /*    termina galerie     */
