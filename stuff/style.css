@@ -411,6 +411,15 @@ footer {
 
 /*    termina footer     */
 
+/*    Prima pagină      */
+
+.specialImg img{
+  height: 600px;
+}
+.specialImg {
+  margin-top: 20px;
+}
+
 /*    incepe media responsive     */
 
 @supports (display: grid) {
@@ -754,6 +763,10 @@ footer {
  img:hover {
    transform: none;
  }
+
+ .specialImg img {
+  height: unset;
+}
 }
 
 /*    termiana media responsive     */
