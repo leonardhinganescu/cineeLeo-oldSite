@@ -48,7 +48,7 @@ nav li {
   font-size: 1.25rem;
 }
 
-nav li:nth-child(2) {
+nav li:nth-last-child(1) {
   margin: 0;
 }
 
@@ -88,7 +88,7 @@ footer {
   font-style: italic;
 }
 
-footer li:nth-child(2) {
+footer li:nth-last-child(1) {
   margin: 0;
 }
 
