@@ -93,7 +93,7 @@ function scrollUp(event) {
     let pos = window.pageYOffset;
 
     if (pos > 0) {
-      window.scrollTo(0, pos - 40);
+      window.scrollTo(0, pos - 300);
     } else {
       window.clearInterval(scrollToTop);
     }
