@@ -1,14 +1,20 @@
-// Selectors
+//    SELECTORS
 const copyright = document.querySelector(".copyright");
 const expBtn = document.querySelector(".expandable");
+const scrollUpBtn = document.querySelector(".scrollUpBtn");
 
-// Event Listeners
+//    EVENT LISTENERS
 document.addEventListener("DOMContentLoaded", showDate);
 if (expBtn) {
   expBtn.addEventListener("click", expandableSmth);
 }
+if (scrollUpBtn) {
+  scrollUpBtn.addEventListener("click", scrollUp);
+}
 
-// Functions
+//    FUNCTIONS
+
+//    Filtre
 $(function () {
   var selectedClass = "";
 
@@ -43,6 +49,7 @@ $(function () {
   });
 });
 
+//    Expand
 function expandableSmth(event) {
   let content = this.nextElementSibling;
 
@@ -53,20 +60,21 @@ function expandableSmth(event) {
   }
 }
 
+//    create footer text
 function showDate(event) {
   const monthNames = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "january",
+    "february",
+    "march",
+    "april",
+    "may",
+    "june",
+    "july",
+    "august",
+    "september",
+    "october",
+    "november",
+    "december",
   ];
   let footerText =
     "&copy " +
@@ -77,4 +85,17 @@ function showDate(event) {
   footerText += ", cine e Leo?";
 
   copyright.innerHTML = footerText;
+}
+
+//    scroll up button
+function scrollUp(event) {
+  let scrollToTop = window.setInterval(function () {
+    let pos = window.pageYOffset;
+
+    if (pos > 0) {
+      window.scrollTo(0, pos - 40);
+    } else {
+      window.clearInterval(scrollToTop);
+    }
+  }, 4);
 }

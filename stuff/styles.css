@@ -10,6 +10,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Cormorant_Garamond;
   font-weight: 500;
@@ -29,6 +33,10 @@ body {
 
 button {
   padding: 1px 6px;
+}
+
+.hideOnWeb {
+  display: none;
 }
 
 nav {
@@ -487,6 +495,12 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
+.scrollUpBtn {
+  margin: 2rem 0 1rem;
+  display: none;
+  font-size: 1.2rem;
+}
+
 .formatare_text {
   text-indent: 2rem;
   text-align: justify;
@@ -494,14 +508,24 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
+  .scrollUpBtn {
+    display: inline-block;
+  }
   nav {
-    padding-top: 1.5rem;
+    padding: 1.5rem 0 1.5rem 1.5rem;
+  }
+  nav ul {
+    padding-top: 3rem;
+    padding-left: 2rem;
   }
   .title {
     -webkit-margin-before: 0.3em;
             margin-block-start: 0.3em;
     -webkit-margin-after: 0em;
             margin-block-end: 0em;
+  }
+  .gallery {
+    padding: 0 0 2rem 0;
   }
   .img-container {
     height: 100%;
