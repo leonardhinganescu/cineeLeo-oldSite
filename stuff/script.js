@@ -89,13 +89,5 @@ function showDate(event) {
 
 //    scroll up button
 function scrollUp(event) {
-  let scrollToTop = window.setInterval(function () {
-    let pos = window.pageYOffset;
-
-    if (pos > 0) {
-      window.scrollTo(0, pos - 300);
-    } else {
-      window.clearInterval(scrollToTop);
-    }
-  }, 4);
+  window.scrollTo(0, 0);
 }
