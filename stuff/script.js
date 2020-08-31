@@ -96,11 +96,15 @@ function scrollUp(event) {
 
 const users = ["LiviaCarasel", "AnaRasanu", "EugenToma"];
 const passwords = ["8U93UsDu", "m6V29kIj", "tW6pCy6p"];
-const name = ["hi Livia C&#259;r&#259;&#351;el", "hi Ana R&#259;&#351;anu", "hi Eugen Toma"];
+const name = [
+  "hi Livia C&#259;r&#259;&#351;el",
+  "hi Ana R&#259;&#351;anu",
+  "hi Eugen Toma",
+];
 const links = [
-  "https://onedrive.live.com/download?cid=F78C5CD72F62945B&resid=F78C5CD72F62945B%21780&authkey=ACn5CMeOUW_T6pU",
-  "https://onedrive.live.com/download?cid=F78C5CD72F62945B&resid=F78C5CD72F62945B%21778&authkey=ALT-y4ke81Dv32w",
-  "https://onedrive.live.com/download?cid=F78C5CD72F62945B&resid=F78C5CD72F62945B%21779&authkey=AEzyXFNug9xdkZc"
+  "https://matix.li/4a36297afa27",
+  "https://matix.li/23511ddd71c1",
+  "https://matix.li/dc0056408cad",
 ];
 
 const loginBtn = document.querySelector("#loginbtn");
