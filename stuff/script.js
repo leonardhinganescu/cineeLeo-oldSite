@@ -94,12 +94,13 @@ function scrollUp(event) {
 
 //    LOGIN
 
-const users = ["LiviaCarasel", "AnaRasanu"];
-const passwords = ["8U93UsDu", "m6V29kIj"];
-const name = ["hi Livia C&#259;r&#259;&#351;el", "hi Ana R&#259;&#351;anu"];
+const users = ["LiviaCarasel", "AnaRasanu", "EugenToma"];
+const passwords = ["8U93UsDu", "m6V29kIj", "tW6pCy6p"];
+const name = ["hi Livia C&#259;r&#259;&#351;el", "hi Ana R&#259;&#351;anu", "hi Eugen Toma"];
 const links = [
   "https://drive.google.com/uc?export=download&id=1z38D10-UPvAgUltXTfT_b3LdrElnJ4Ks",
   "https://drive.google.com/uc?export=download&id=1985RbRO8RJG9uNTemcAHrsFlfO6Tf2Wr",
+  "https://drive.google.com/uc?export=download&id=17E699Sn9HU56Jf5ohskmcGxjIXMSQhU4"
 ];
 
 const loginBtn = document.querySelector("#loginbtn");
