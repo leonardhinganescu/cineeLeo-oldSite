@@ -98,9 +98,9 @@ const users = ["LiviaCarasel", "AnaRasanu", "EugenToma"];
 const passwords = ["8U93UsDu", "m6V29kIj", "tW6pCy6p"];
 const name = ["hi Livia C&#259;r&#259;&#351;el", "hi Ana R&#259;&#351;anu", "hi Eugen Toma"];
 const links = [
-  "https://drive.google.com/uc?export=download&id=1z38D10-UPvAgUltXTfT_b3LdrElnJ4Ks",
-  "https://drive.google.com/uc?export=download&id=1985RbRO8RJG9uNTemcAHrsFlfO6Tf2Wr",
-  "https://drive.google.com/uc?export=download&id=17E699Sn9HU56Jf5ohskmcGxjIXMSQhU4"
+  "https://onedrive.live.com/download?cid=F78C5CD72F62945B&resid=F78C5CD72F62945B%21780&authkey=ACn5CMeOUW_T6pU",
+  "https://onedrive.live.com/download?cid=F78C5CD72F62945B&resid=F78C5CD72F62945B%21778&authkey=ALT-y4ke81Dv32w",
+  "https://onedrive.live.com/download?cid=F78C5CD72F62945B&resid=F78C5CD72F62945B%21779&authkey=AEzyXFNug9xdkZc"
 ];
 
 const loginBtn = document.querySelector("#loginbtn");
