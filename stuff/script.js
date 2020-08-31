@@ -96,7 +96,7 @@ function scrollUp(event) {
 
 const users = ["LiviaCarasel", "AnaRasanu"];
 const passwords = ["8U93UsDu", "m6V29kIj"];
-const name = ["Hi Livia C&#259;r&#259;&#351;el!", "Hi Ana R&#259;	&#351;anu!"];
+const name = ["Hi Livia C&#259;r&#259;&#351;el!", "Hi Ana R&#259;&#351;anu!"];
 const links = [
   "https://drive.google.com/uc?export=download&id=1z38D10-UPvAgUltXTfT_b3LdrElnJ4Ks",
   "https://drive.google.com/uc?export=download&id=1985RbRO8RJG9uNTemcAHrsFlfO6Tf2Wr",
