@@ -489,7 +489,7 @@ figure {
 
 .img-container {
   width: 100%;
-  max-height: 600px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -514,6 +514,22 @@ img {
   text-indent: 2rem;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.text {
+  height: 650px;
+}
+
+.order1 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.order2 {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 @media screen and (max-width: 1024px) {
@@ -554,6 +570,16 @@ img {
   }
   .specialImg img {
     height: unset;
+  }
+  .order1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .order2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
