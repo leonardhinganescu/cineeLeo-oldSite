@@ -10,7 +10,19 @@
           box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   font-family: Cormorant_Garamond;
   font-weight: 500;
   font-size: 1.125rem;
@@ -85,6 +97,7 @@ a:hover {
 }
 
 footer {
+  margin-top: auto;
   width: 100%;
   padding: 1rem 0;
   background: #f7f7f7;
@@ -961,5 +974,65 @@ img {
         flex-basis: 100%;
     max-width: 100%;
   }
+}
+
+form {
+  padding-top: 3rem;
+}
+
+.form {
+  padding-top: 3rem;
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: solid 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.downloadTab {
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.downloadTitle {
+  font-size: 2rem;
+}
+
+.downloadBtn {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  padding: 0 0.5rem;
+}
+
+#loginbtn {
+  margin-top: 1.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
