@@ -8,4 +8,11 @@ function makeDark(e) {
     bodyelem.classList.toggle("dark_mode_body");
     darkBtn.classList.toggle("light_mode_btn");
     navelem.classList.toggle("dark_mode_nav");
+
+    if (darkBtn.classList.contains("light_mode_btn")) {
+        darkBtn.innerHTML = "light mode";
+    }
+    else {
+        darkBtn.innerHTML = "dark mode";
+    }
 }
