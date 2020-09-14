@@ -14,7 +14,7 @@ for (let i = 0; i < tiles.length; i++) {
 
 function changeImage() {
   imgSrc = tiles[index].children[0].children[0].getAttribute("src");
-  lightboxImg.src = imgSrc;
+  lightboxImg.src = imgSrc.replace("small", "big");
 }
 
 function lightBOX() {
