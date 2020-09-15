@@ -1,16 +1,7 @@
-const users = ["LiviaCarasel", "AnaRasanu", "EugenToma", "RuxandraFilimon"];
-const passwords = ["8U93UsDu", "m6V29kIj", "tW6pCy6p", "dmNM9L6l"];
-const name = ["hi Livia C&#259;r&#259;&#351;el", "hi Ana R&#259;&#351;anu", "hi Eugen Toma", "hi Ruxandra Filimon"];
-const links = [
-  "https://matix.li/4a36297afa27",
-  "https://matix.li/23511ddd71c1",
-  "https://matix.li/dc0056408cad",
-  "https://matix.li/02b18fe08173"
-];
-
 const loginBtn = document.querySelector("#loginbtn");
 const theForm = document.querySelector(".form");
 const title = document.querySelector(".downloadTitle");
+const gridDiv = document.querySelectorAll(".grid")[1];
 
 loginBtn.addEventListener("click", function (event) {
   event.preventDefault();
@@ -30,12 +21,9 @@ loginBtn.addEventListener("click", function (event) {
   if (credentialsOK) {
     theForm.style.opacity = "0";
 
-    const gridDiv = document.querySelectorAll(".grid")[1];
     setTimeout(function () {
       gridDiv.removeChild(gridDiv.childNodes[1]);
     }, 1000);
-
-    console.log(gridDiv);
 
     const bigDiv = document.createElement("div");
     bigDiv.classList.add("column-xs-12");
@@ -44,26 +32,55 @@ loginBtn.addEventListener("click", function (event) {
     const centerDiv = document.createElement("div");
     centerDiv.classList.add("centered");
 
-    const title = document.createElement("h3");
-    title.classList.add("downloadTitle");
-    title.innerHTML = name[index];
-    centerDiv.appendChild(title);
+    let insertion;
 
-    const dwnLink = document.createElement("a");
-    dwnLink.setAttribute("href", links[index]);
-    dwnLink.setAttribute("download", users[index]);
-    dwnLink.setAttribute("target", "_blank");
-    dwnLink.classList.add("buton");
-    dwnLink.classList.add("downloadBtn");
-    dwnLink.innerText = "Download your photos from here";
-    centerDiv.appendChild(dwnLink);
+    if (loginBtn.getAttribute("whatpage") === "download") {
+      insertion = downloadPictures(index);
+
+      const title = document.createElement("h3");
+      title.classList.add("downloadTitle");
+      title.innerHTML = name[index];
+      centerDiv.appendChild(title);
+    } else {
+      insertion = showMoodboard(index);
+    }
+
+    centerDiv.appendChild(insertion);
 
     bigDiv.appendChild(centerDiv);
     gridDiv.appendChild(bigDiv);
 
     setTimeout(function () {
       bigDiv.style.opacity = "1";
-      bigDiv.style.padding = "5rem 0 0 0";
+      if (loginBtn.getAttribute("whatpage") === "download") {
+        bigDiv.style.padding = "5rem 0 0 0";
+      }
     }, 1300);
   }
 });
+
+///       DOWNLOAD PICTURES
+
+function downloadPictures(index) {
+  const dwnLink = document.createElement("a");
+  dwnLink.setAttribute("href", links[index]);
+  dwnLink.setAttribute("download", users[index]);
+  dwnLink.setAttribute("target", "_blank");
+  dwnLink.classList.add("buton");
+  dwnLink.classList.add("downloadBtn");
+  dwnLink.innerText = "Download your photos from here";
+
+  return dwnLink;
+}
+
+///       SHOW MOODBOARD
+
+function showMoodboard(index) {
+  const moodboard = document.createElement("iframe");
+  moodboard.setAttribute("src", moodlinks[index]);
+  moodboard.setAttribute("frameborder", "0");
+  moodboard.style.width = "100%";
+  moodboard.style.height = "70vh";
+
+  return moodboard;
+}
