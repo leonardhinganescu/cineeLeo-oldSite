@@ -1302,4 +1302,31 @@ input {
 .centerpage a:hover {
   background-color: white;
 }
+
+.order3 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.dream-container {
+  border-top: 1px solid rgba(187, 187, 187, 0.315);
+  margin-top: 3em;
+}
+
+.dream-text {
+  font-style: italic;
+  padding-top: 1em;
+}
+
+.format-dream {
+  font-weight: unset;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #bbbbbb;
+          text-decoration-color: #bbbbbb;
+}
+
+.dream-author {
+  padding-top: 0.5em;
+}
 /*# sourceMappingURL=styles.css.map */
