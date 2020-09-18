@@ -1,6 +1,9 @@
 const darkBtn = document.querySelector(".dark_mode_btn");
 const bodyelem = document.body;
 const navelem = document.querySelector("#nav");
+const quoteEl = document.querySelector(".dream-container");
+const theFooter = document.querySelector("footer");
+const scrollBtn = document.querySelector(".scrollUpBtn");
 
 darkBtn.addEventListener("click", makeDark);
 
@@ -15,4 +18,7 @@ function makeDark(e) {
     else {
         darkBtn.innerHTML = "dark mode";
     }
+    quoteEl.classList.toggle("dark-mode-quote");
+    theFooter.classList.toggle("dark-mode-footer");
+    scrollBtn.classList.toggle("dark-mode-scrollUpBtn");
 }
