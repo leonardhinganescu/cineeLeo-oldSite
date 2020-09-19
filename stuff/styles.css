@@ -562,6 +562,9 @@ figure {
 }
 
 @media screen and (max-width: 62rem) {
+  .specialImg {
+    margin-top: 0px;
+  }
   .dream-container {
     margin: 3em 1em 0 1em;
   }
@@ -590,6 +593,9 @@ figure {
   }
   .img-container {
     height: 100%;
+  }
+  .img-container img {
+    height: unset;
   }
   .img-content {
     display: block;
