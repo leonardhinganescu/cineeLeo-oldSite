@@ -1,33 +1,72 @@
-const users = ["LiviaCarasel", "AnaRasanu", "EugenToma", "RuxandraFilimon", "CoraOprea", "Dora&Mara", "VictoriaConescu", "ClaraUrdea"];
-const passwords = ["8U93UsDu", "m6V29kIj", "tW6pCy6p", "dmNM9L6l", "7x0GXlgK", "49hiFgRR", "9PrLJS5G", "s4FI5tVK"];
-const name = [
-  "hi Livia C&#259;r&#259;&#351;el",
-  "hi Ana R&#259;&#351;anu",
-  "hi Eugen Toma",
-  "hi Ruxandra Filimon",
-  "hi Cora Oprea",
-  "hi Dora & Mara",
-  "hi Victoria",
-  "hi Clara",
-];
-const links = [
-  "https://matix.li/4a36297afa27",
-  "https://matix.li/23511ddd71c1",
-  "https://matix.li/dc0056408cad",
-  "https://matix.li/02b18fe08173",
-  "#",
-  "#",
-  "#",
-  "#",
-];
-
-const moodlinks = [
-  "#",
-  "#",
-  "#",
-  "#",
-  "https://app.milanote.com/1Ki99v1EgoXu0a?p=ZxdJuAt95sS",
-  "https://app.milanote.com/1KiaLE1EgoXu0m?p=tnkFg59NQOR",
-  "https://app.milanote.com/1KkhG41ABBzO81?p=AEMf1QTI3m6",
-  "https://app.milanote.com/1KkhAs1ABBzO7Y?p=BJBRqN8oHox",
+const accounts = [
+  {
+    user: "LiviaCarasel",
+    pass: "8U93UsDu",
+    title: "hi Livia C&#259;r&#259;&#351;el",
+    downLink: "https://matix.li/4a36297afa27",
+    moodLink: undefined,
+  },
+  {
+    user: "AnaRasanu",
+    pass: "m6V29kIj",
+    title: "hi Ana R&#259;&#351;anu",
+    downLink: "https://matix.li/23511ddd71c1",
+    moodLink: undefined,
+  },
+  {
+    user: "EugenToma",
+    pass: "tW6pCy6p",
+    title: "hi Eugen Toma",
+    downLink: "https://matix.li/dc0056408cad",
+    moodLink: undefined,
+  },
+  {
+    user: "RuxandraFilimon",
+    pass: "dmNM9L6l",
+    title: "hi Ruxandra Filimon",
+    downLink: "https://matix.li/02b18fe08173",
+    moodLink: undefined,
+  },
+  {
+    user: "CoraOprea",
+    pass: "7x0GXlgK",
+    title: "hi Cora Oprea",
+    downLink: undefined,
+    moodLink: "https://app.milanote.com/1Ki99v1EgoXu0a?p=ZxdJuAt95sS",
+  },
+  {
+    user: "Dora&Mara",
+    pass: "49hiFgRR",
+    title: "hi Dora & Mara",
+    downLink: undefined,
+    moodLink: "https://app.milanote.com/1KiaLE1EgoXu0m?p=tnkFg59NQOR",
+  },
+  {
+    user: "VictoriaConescu",
+    pass: "9PrLJS5G",
+    title: "hi Victoria Ionescu",
+    downLink: undefined,
+    moodLink: "https://app.milanote.com/1KkhG41ABBzO81?p=AEMf1QTI3m6",
+  },
+  {
+    user: "ClaraUrdea",
+    pass: "s4FI5tVK",
+    title: "hi Clara Urdea",
+    downLink: undefined,
+    moodLink: "https://app.milanote.com/1KkhAs1ABBzO7Y?p=BJBRqN8oHox",
+  },
+  {
+    user: "MihaelaRaducu",
+    pass: "sHR2s4ml",
+    title: "hi Mihaela R&#259;ducu",
+    downLink: undefined,
+    moodLink: "https://app.milanote.com/1KjGef1UyezM6e?p=fqiwMZVEJwg",
+  },
+  {
+    user: "CristianaMircea",
+    pass: "13AHpTrP",
+    title: "hi Cristiana Mircea",
+    downLink: "https://matix.li/f17eb57cf559",
+    moodLink: undefined,
+  },
 ];

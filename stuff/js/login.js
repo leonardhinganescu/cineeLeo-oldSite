@@ -11,8 +11,8 @@ loginBtn.addEventListener("click", function (event) {
   let credentialsOK = false;
   let index;
 
-  users.forEach(function (curent_user, i) {
-    if (curent_user === user && pass === passwords[i]) {
+  accounts.forEach(function (curent_user, i) {
+    if (curent_user.user === user && curent_user.pass === pass) {
       credentialsOK = true;
       index = i;
     }
@@ -39,7 +39,7 @@ loginBtn.addEventListener("click", function (event) {
 
       const title = document.createElement("h3");
       title.classList.add("downloadTitle");
-      title.innerHTML = name[index];
+      title.innerHTML = accounts[index].title;
       centerDiv.appendChild(title);
     } else {
       insertion = showMoodboard(index);
@@ -63,8 +63,8 @@ loginBtn.addEventListener("click", function (event) {
 
 function downloadPictures(index) {
   const dwnLink = document.createElement("a");
-  dwnLink.setAttribute("href", links[index]);
-  dwnLink.setAttribute("download", users[index]);
+  dwnLink.setAttribute("href", accounts[index].downLink);
+  dwnLink.setAttribute("download", accounts[index].user);
   dwnLink.setAttribute("target", "_blank");
   dwnLink.classList.add("buton");
   dwnLink.classList.add("downloadBtn");
@@ -77,7 +77,7 @@ function downloadPictures(index) {
 
 function showMoodboard(index) {
   const moodboard = document.createElement("iframe");
-  moodboard.setAttribute("src", moodlinks[index]);
+  moodboard.setAttribute("src", accounts[index].moodLink);
   moodboard.setAttribute("frameborder", "0");
   moodboard.style.width = "100%";
   moodboard.style.height = "70vh";
