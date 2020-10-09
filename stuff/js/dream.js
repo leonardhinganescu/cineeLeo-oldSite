@@ -124,25 +124,80 @@ const dream = [
     author: "Kalpana Chawla",
   },
   { text: "Great dreams of great dreamers are always transcended.", author: "A. P. J. Abdul Kalam" },
-  { text: "New Year's Day. A fresh start. A new chapter in life waiting to be written. New questions to be asked, embraced, and loved. Answers to be discovered and then lived in this transformative year of delight and self-discovery. Today carve out a quiet interlude for yourself in which to dream, pen in hand. Only dreams give birth to change.", author: "Sarah Ban Breathnach" },
+  {
+    text:
+      "New Year's Day. A fresh start. A new chapter in life waiting to be written. New questions to be asked, embraced, and loved. Answers to be discovered and then lived in this transformative year of delight and self-discovery. Today carve out a quiet interlude for yourself in which to dream, pen in hand. Only dreams give birth to change.",
+    author: "Sarah Ban Breathnach",
+  },
   { text: "Dreams have only one owner at a time. That's why dreamers are lonely.", author: "Erma Bombeck" },
-  { text: "You control your future, your destiny. What you think about comes about. By recording your dreams and goals on paper, you set in motion the process of becoming the person you most want to be. Put your future in good hands - your own.", author: "Mark Victor Hansen" },
-  { text: "Grit is that 'extra something' that separates the most successful people from the rest. It's the passion, perseverance, and stamina that we must channel in order to stick with our dreams until they become a reality.", author: "Travis Bradberry" },
+  {
+    text:
+      "You control your future, your destiny. What you think about comes about. By recording your dreams and goals on paper, you set in motion the process of becoming the person you most want to be. Put your future in good hands - your own.",
+    author: "Mark Victor Hansen",
+  },
+  {
+    text:
+      "Grit is that 'extra something' that separates the most successful people from the rest. It's the passion, perseverance, and stamina that we must channel in order to stick with our dreams until they become a reality.",
+    author: "Travis Bradberry",
+  },
   { text: "Hold fast to dreams For when dreams go Life is a barren field Frozen with snow.", author: "Langston Hughes" },
-  { text: "My dreams for the future are simple: work, a happy, healthy family, a lovely long motorcycle ride, and continuing the struggle to awaken people to the need for serious human rights reform.", author: "Mike Farrell" },
-  { text: "The equal right of all citizens to health, education, work, food, security, culture, science, and wellbeing - that is, the same rights we proclaimed when we began our struggle, in addition to those which emerge from our dreams of justice and equality for all inhabitants of our world - is what I wish for all.", author: "Fidel Castro" },
+  {
+    text:
+      "My dreams for the future are simple: work, a happy, healthy family, a lovely long motorcycle ride, and continuing the struggle to awaken people to the need for serious human rights reform.",
+    author: "Mike Farrell",
+  },
+  {
+    text:
+      "The equal right of all citizens to health, education, work, food, security, culture, science, and wellbeing - that is, the same rights we proclaimed when we began our struggle, in addition to those which emerge from our dreams of justice and equality for all inhabitants of our world - is what I wish for all.",
+    author: "Fidel Castro",
+  },
   { text: "To accomplish great things, we must not only act, but also dream; not only plan, but also believe.", author: "Anatole France" },
-  { text: "I dreamed I was a butterfly, flitting around in the sky; then I awoke. Now I wonder: Am I a man who dreamt of being a butterfly, or am I a butterfly dreaming that I am a man?", author: "Zhuangzi" },
-  { text: "Without leaps of imagination, or dreaming, we lose the excitement of possibilities. Dreaming, after all, is a form of planning.", author: "Gloria Steinem" },
-  { text: "A lot of people have their big dreams and get knocked down and don't have things go their way. And you never give up hope, and you really just hold on to it. Hard work and perserverance. You just keep getting up and getting up, and then you get that breakthrough.", author: "Robert Kraft" },
-  { text: "If you want to have a life that is worth living, a life that expresses your deepest feelings and emotions and cares and dreams, you have to fight for it.", author: "Alice Walker" },
-  { text: "A horse is the projection of peoples' dreams about themselves - strong, powerful, beautiful - and it has the capability of giving us escape from our mundane existence.", author: "Pam Brown" },
-  { text: "We become not a melting pot but a beautiful mosaic. Different people, different beliefs, different yearnings, different hopes, different dreams.", author: "Jimmy Carter" },
-  { text: "All men dream, but not equally. Those who dream by night in the dusty recesses of their minds, wake in the day to find that it was vanity: but the dreamers of the day are dangerous men, for they may act on their dreams with open eyes, to make them possible.", author: "T. E. Lawrence" },
-  { text: "Long walks on the beach are the supposed holy grail of a romantic evening. The beach becomes a kind of utopia - the place where all our dreams come true.", author: "Roxane Gay" },
+  {
+    text:
+      "I dreamed I was a butterfly, flitting around in the sky; then I awoke. Now I wonder: Am I a man who dreamt of being a butterfly, or am I a butterfly dreaming that I am a man?",
+    author: "Zhuangzi",
+  },
+  {
+    text: "Without leaps of imagination, or dreaming, we lose the excitement of possibilities. Dreaming, after all, is a form of planning.",
+    author: "Gloria Steinem",
+  },
+  {
+    text:
+      "A lot of people have their big dreams and get knocked down and don't have things go their way. And you never give up hope, and you really just hold on to it. Hard work and perserverance. You just keep getting up and getting up, and then you get that breakthrough.",
+    author: "Robert Kraft",
+  },
+  {
+    text:
+      "If you want to have a life that is worth living, a life that expresses your deepest feelings and emotions and cares and dreams, you have to fight for it.",
+    author: "Alice Walker",
+  },
+  {
+    text:
+      "A horse is the projection of peoples' dreams about themselves - strong, powerful, beautiful - and it has the capability of giving us escape from our mundane existence.",
+    author: "Pam Brown",
+  },
+  {
+    text:
+      "We become not a melting pot but a beautiful mosaic. Different people, different beliefs, different yearnings, different hopes, different dreams.",
+    author: "Jimmy Carter",
+  },
+  {
+    text:
+      "All men dream, but not equally. Those who dream by night in the dusty recesses of their minds, wake in the day to find that it was vanity: but the dreamers of the day are dangerous men, for they may act on their dreams with open eyes, to make them possible.",
+    author: "T. E. Lawrence",
+  },
+  {
+    text:
+      "Long walks on the beach are the supposed holy grail of a romantic evening. The beach becomes a kind of utopia - the place where all our dreams come true.",
+    author: "Roxane Gay",
+  },
   { text: "I don't design clothes, I design dreams.", author: "Ralph Lauren" },
   { text: "Dreams are often most profound when they seem the most crazy.", author: "Sigmund Freud" },
-  { text: "Believe in love. Believe in magic. Hell, believe in Santa Clause. Believe in others. Believe in yourself. Believe in your dreams. If you don't, who will?", author: "Jon Bon Jovi" },
+  {
+    text:
+      "Believe in love. Believe in magic. Hell, believe in Santa Clause. Believe in others. Believe in yourself. Believe in your dreams. If you don't, who will?",
+    author: "Jon Bon Jovi",
+  },
   //{ text: "", author: "" },
 ];
 
