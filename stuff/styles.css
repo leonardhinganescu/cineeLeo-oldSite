@@ -149,6 +149,14 @@ footer li:nth-last-child(1) {
   background: #555;
 }
 
+.progressBar {
+  background-color: black;
+  height: 3px;
+  width: 0%;
+  display: block;
+  position: fixed;
+}
+
 @font-face {
   font-family: Cormorant_Garamond;
   src: url(fonts/cormorantgaramond-light.ttf);
@@ -582,7 +590,7 @@ figure {
 .card {
   height: 400px;
   width: 400px;
-  min-width: 280px;
+  min-width: 330px;
   padding: 1.5rem;
   border-radius: 16px;
   background: white;
@@ -629,7 +637,7 @@ figure {
 }
 
 .card-header h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0.25rem 0 auto;
   text-decoration: none;
   color: inherit;
@@ -712,25 +720,28 @@ figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.direction-column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
 .tags a {
   font-style: normal;
   font-weight: 700;
-  font-size: 0.5rem;
   color: #7a7a8c;
   text-transform: uppercase;
-  font-size: 0.66rem;
+  font-size: 0.6rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 1em;
-  padding: 0.2rem 0.85rem 0.2rem;
+  padding: 0.2em 0.85em 0.2em;
   position: relative;
+  text-align: center;
 }
 
 @media screen and (max-width: 62rem) {
