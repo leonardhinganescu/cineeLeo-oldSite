@@ -2,7 +2,7 @@
 const expBtn = document.querySelector(".expandable");
 
 //    EVENT LISTENERS
-expBtn.addEventListener("click", expandableSmth);
+if (expBtn) expBtn.addEventListener("click", expandableSmth);
 
 //    FUNCTIONS
 
