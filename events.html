@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="stuff/icons/favicon.png" />
     <script src="https://kit.fontawesome.com/a4ee151ce3.js" crossorigin="anonymous"></script>
 
-    <title>cine e Leo? • Leonard Hîngănescu</title>
+    <title>events • cine e Leo?</title>
     <meta name="description" content="The official photography portfolio and website of the photographer Leonard H&#238;ng&#259;nescu." />
     <meta
       name="keywords"
@@ -16,9 +16,9 @@
     />
     <meta name="author" content="Leonard Hîngănescu" />
 
-    <meta property="og:title" content="cine e Leo? • Leonard Hîngănescu" />
+    <meta property="og:title" content="events • cine e Leo?" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://leonardhinganescu.github.io/cineeleo/index.html" />
+    <meta property="og:url" content="https://leonardhinganescu.github.io/cineeleo/people.html" />
     <meta property="og:image" content="stuff/img/about/profile_picture.jpg" />
     <meta property="og:description" content="The official photography portfolio and website of the photographer Leonard H&#238;ng&#259;nescu." />
 
@@ -39,7 +39,7 @@
     </script>
   </head>
   <body>
-    <nav>
+    <nav id="nav">
       <div class="container">
         <div class="grid">
           <div class="column-xs-12 column-md-2">
@@ -50,7 +50,7 @@
             <ul>
               <li><a href="people.html">people</a></li>
               <li><a href="analog.html">analog</a></li>
-              <li><a href="events.html">events</a></li>
+              <li><a href="events.html" class="active">events</a></li>
               <li><a href="about.html">about</a></li>
             </ul>
           </div>
@@ -59,51 +59,41 @@
     </nav>
 
     <section class="gallery">
-      <div class="container">
-        <div class="grid dimmed quote">
-          <div class="column-xs-12">
-            <div class="indexTitle">
-              <h1>overview</h1>
-              <p>here you can see my latest work</p>
-            </div>
-          </div>
-          
-          <div class="column-xs-12 column-md-4">
-            <figure class="img-container">
-              <img src="stuff/img/vladimir_negrea/small/vladimir_negrea_6.jpg" />
-            </figure>
-          </div>
-
-          <div class="column-xs-12 column-md-4">
-            <figure class="img-container">
-              <img src="stuff/img/analog/small/analog19.JPG" />
-            </figure>
-          </div>
-
-          <div class="column-xs-12 column-md-4">
-            <figure class="img-container">
-              <img src="stuff/img/denisa_savuc/small/denisa_savuc_1.jpg" />
-            </figure>
-          </div>
-
-          <div class="column-xs-12 column-md-6">
-            <figure class="img-container">
-              <img src="stuff/img/cora_oprea/small/cora_oprea_7.jpg" />
-            </figure>
-          </div>
-
-          <div class="column-xs-12 column-md-6">
-            <figure class="img-container">
-              <img src="stuff/img/ramona_tacu/small/ramona_tacu_4.jpg" />
-            </figure>
-          </div>
-
-          <div class="column-xs-12">
-            <figure class="img-container specialImg">
-              <img src="stuff/img/eugen_toma_5.jpg" />
-            </figure>
+      <div class="container quote">
+        <div class="filtre">
+          <button class="buton_mare dark_mode_btn">dark mode</button>
+          <button class="buton_mare expandable">filter by event</button>
+          <div class="toolbar">
+            <button class="buton actiune butonactiv" value="all">all</button>
+            <button class="buton actiune" value="sfr">SFR</button>
           </div>
         </div>
+
+        <div id="portfolio" class="grid">
+          <div class="tile dimmed column-xs-12 column-md-4 scale-anm ramona_tacu all">
+            <figure class="img-container">
+              <img src="stuff/img/ramona_tacu/small/ramona_tacu_9.jpg" />
+            </figure>
+          </div>
+          <div class="tile dimmed column-xs-12 column-md-8 scale-anm ruxandra_filimon all">
+            <figure class="img-container">
+              <img loading="lazy" src="stuff/img/ruxandra_filimon/small/ruxandra_filimon_5.jpg" />
+            </figure>
+          </div>
+          
+        </div>
+
+        <div>
+          <button class="buton scrollUpBtn">scroll up</button>
+        </div>
+      </div>
+
+      <div class="lightbox hideForMobile">
+        <button class="lightbox_prev" onclick="prev()"></button>
+        <div class="lightbox_container dimmed">
+          <img id="lightboxIMG" src="#" alt="" />
+        </div>
+        <button class="lightbox_next" onclick="next()"></button>
       </div>
     </section>
 
@@ -142,8 +132,11 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="stuff/js/script.js"></script>
+    <script src="stuff/js/lightbox.js"></script>
     <script src="stuff/js/dream.js"></script>
+    <script src="stuff/js/dark-mode.js"></script>
     <script src="stuff/js/progressScroll.js"></script>
   </body>
 </html>
